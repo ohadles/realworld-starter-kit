@@ -15,9 +15,17 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "permissions": {
+        "notifications": {
+          "alert": true,
+          "badge": true,
+          "sound": true
+        }
+      }
     },
     "android": {
+      "permissions": ["NOTIFICATIONS"],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
